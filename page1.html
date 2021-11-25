@@ -1,119 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OhMyFood</title>
+    <script src="https://kit.fontawesome.com/1951a0778b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style2.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <!-- Header -->
 
     <header>
-        <img src="" alt="Logo OhMyFood">
-        <i class="fas fa-arrow-left"></i>
+        <img src="images/ohmyfood@2x.svg" alt="Logo OhMyFood">
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
     </header>
 
     <!-- Background Image -->
-
-
+    
+    <img id="background" src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Fond d'écran image À la française">
 
     <!-- Section : À la française -->
 
     <section>
-        <div>
+        <div class="titre">
             <h2>À la française</h2>
             <i class="far fa-heart"></i>
+            <i class="fas fa-heart"></i>
         </div>
-        <div>
-            <div>
+        <div class="affichage-desktop">
+            <!-- Entrées -->
+            <div class="entrees">
                 <h3>ENTRÉES</h3>
-                <div>
-                    <div>
+                <div class="choix-menu un">
+                    <div class="textes">
                         <h4>Tartare de poulpe acidulé</h4>
                         <p>Aux zests d'orange</p>
                     </div>
                     <p>25€</p>
-                    <i class="fas fa-check-circle"></i>
+                    <div class="check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
-                <div>
-                    <div>
+                <div class="choix-menu deux">
+                    <div class="textes">
                         <h4>Velouté de légumes d'antan</h4>
                         <p>Carotte, panais, topinambour</p>
                     </div>
                     <p>35€</p>
-                    <i class="fas fa-check-circle"></i>
+                    <div class="check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
-                <div>
-                    <div>
+                <div class="choix-menu trois">
+                    <div class="textes">
                         <h4>Soupe à l'oignon</h4>
                         <p>Revisitée</p>
                     </div>
                     <p>20€</p>
-                    <i class="fas fa-check-circle"></i>
+                    <div class="check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
             </div>
-            <div>
+            <!-- Plats -->
+            <div class="plats">
                 <h3>PLATS</h3>
-                <div>
-                    <div>
+                <div class="choix-menu">
+                    <div class="textes">
                         <h4>Coquilles Saint-Jacques</h4>
                         <p>Accompagnées d'une purée de panais</p>
                     </div>
                     <p>40€</p>
-                    <i class="fas fa-check-circle"></i>
+                    <div class="check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
-                <div>
-                    <div>
+                <div class="choix-menu">
+                    <div class="textes">
                         <h4>Magret de canard</h4>
                         <p>Et parmentier de pommes de terres</p>
                     </div>
                     <p>35€</p>
-                    <i class="fas fa-check-circle"></i>
+                    <div class="check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
-                <div>
-                    <div>
+                <div class="choix-menu">
+                    <div class="textes">
                         <h4>Pigeonneau d'Ille-et-Vilaine</h4>
                         <p>Sur son lit de gnocchis aux légumes</p>
                     </div>
                     <p>44€</p>
-                    <i class="fas fa-check-circle"></i>
+                    <div class="check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
             </div>
-            <div>
+            <!-- Desserts -->
+            <div class="desserts">
                 <h3>DESSERTS</h3>
-                <div>
-                    <div>
+                <div class="choix-menu">
+                    <div class="textes">
                         <h4>Pétales de violettes glacés</h4>
                         <p>Et purée de noisettes</p>
                     </div>
                     <p>18€</p>
-                    <i class="fas fa-check-circle"></i>
+                    <div class="check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
-                <div>
-                    <div>
+                <div class="choix-menu">
+                    <div class="textes">
                         <h4>Fondant au chocolat</h4>
                         <p>Revisté</p>
                     </div>
                     <p>22€</p>
-                    <i class="fas fa-check-circle"></i>
+                    <div class="check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
-                <div>
-                    <div>
+                <div class="choix-menu">
+                    <div class="textes">
                         <h4>Millefeuille croustillant</h4>
                         <p>Myrtilles et pâte d'amande</p>
                     </div>
                     <p>23€</p>
-                    <i class="fas fa-check-circle"></i>
+                    <div class="check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
             </div>
         </div>
-        <button>Commander</button>
+        <!-- Bouton -->
+        <div class="bouton-commander">
+            <button>Commander</button>
+        </div>
     </section>
 
     <!-- Footer -->
 
+    <footer>
+        <h2 class="logo">ohmyfood</h2>
+        <div>
+            <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
+            <p><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
+            <p>Mentions légales</p>
+            <p><a href="mailto:ohmyfood@gmail.com">Contact</a></p>
+        </div>
+    </footer>
 
 </body>
 </html>
