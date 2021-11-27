@@ -212,6 +212,9 @@ section .choix-menu:nth-child(3) {
 section .choix-menu:nth-child(4) {
   animation-delay: 3.6s;
 }
+section .choix-menu:nth-child(5) {
+  animation-delay: 3.6s;
+}
 section .choix-menu .textes {
   padding: 20px;
   width: 70%;
