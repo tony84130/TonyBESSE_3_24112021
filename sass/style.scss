@@ -26,22 +26,6 @@
     }
 }
 
-/* Style */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-}
-
-.logo {
-    font-family: 'Shrikhand', cursive;
-}
-
 /* Animation chargement de la page */
 main, section, footer {
     animation: start 1s 3s both;
@@ -92,6 +76,22 @@ main, section, footer {
         border-top-color: #99E2D0;
         animation: spin 1.5s linear infinite;
     }
+}
+
+/* Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+.logo {
+    font-family: 'Shrikhand', cursive;
 }
 
 /* Main */
@@ -259,7 +259,7 @@ main {
                     color: transparent;
                     transition: all 0.5s ease-in-out;
                 }
-                :hover .fas {
+                &:hover .fas {
                     transform: scale(1);
                 }
             }

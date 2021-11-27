@@ -46,23 +46,6 @@
     }
 }
 
-/* Style */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-}
-
-.logo, h2 {
-    font-family: 'Shrikhand', cursive;
-    letter-spacing: 0.03em;
-}
-
 /* Animation chargement de la page */
 header, img, section, footer {
     animation: start 1s 3s both;
@@ -115,6 +98,23 @@ header, img, section, footer {
     }
 }
 
+/* Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+.logo, h2 {
+    font-family: 'Shrikhand', cursive;
+    letter-spacing: 0.03em;
+}
+
 /* Header */
 header {
     display: flex;
@@ -131,6 +131,7 @@ header {
     }
     i {
         position: absolute;
+        top: 40%;
         left: 40px;
         cursor: pointer;
     }
@@ -174,7 +175,7 @@ section {
             color: transparent;
             transition: all 0.5s ease-in-out;
         }
-        :hover .fas {
+        &:hover .fas {
             transform: scale(1);
         }
     }
@@ -203,14 +204,14 @@ section {
         position: relative;
         opacity: 0;
         animation: apparition 2s ease-in-out forwards;
-        :nth-child(2) {
-            animation-delay: 0.2s;
+        &:nth-child(2) {
+            animation-delay: 3.2s;
         }
-        :nth-child(3) {
-            animation-delay: 0.4s;
+        &:nth-child(3) {
+            animation-delay: 3.4s;
         }
-        :nth-child(4) {
-            animation-delay: 0.6s;
+        &:nth-child(4) {
+            animation-delay: 3.6s;
         }
         .textes {
             padding: 20px;
@@ -257,14 +258,14 @@ section {
                 }
             }
         }
-        :hover .check {
+        &:hover .check {
             width: 20%;
             display: flex;
             transform: scaleX(1);
             overflow: hidden;
             z-index: 1;
         }
-        :hover .check i {
+        &:hover .check i {
             animation: rotation 1s ease-in-out;
         }
     }
@@ -282,7 +283,7 @@ section {
             margin: 50px 0px;
             box-shadow: 5px 5px 5px lightgrey;
             cursor: pointer;
-            :active {
+            &:active {
                 box-shadow: 5px 5px 5px grey;
             }
         }
