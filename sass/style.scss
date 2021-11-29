@@ -1,3 +1,10 @@
+
+/* Variables */
+$primaire: #9356DC;
+$secondaire: #FF79DA;
+$tertiaire: #99E2D0;
+$couleur-shadow: lightgrey;
+
 /* Animation Keyframes */
 @keyframes spin {
     from {
@@ -28,7 +35,7 @@
 
 /* Animation chargement de la page */
 main, section, footer {
-    animation: start 1s 3s both;
+    animation: start 1s 1s both;
 }
 
 .loader {
@@ -41,7 +48,7 @@ main, section, footer {
     z-index: 100;
     cursor: wait;
     position: fixed;
-    animation: end 1s 3s linear forwards;
+    animation: end 1s 1s linear forwards;
     .loader-object {
         display: block;
         position: absolute;
@@ -49,7 +56,7 @@ main, section, footer {
         height: 250px;
         border-radius: 50%;
         border: 7px solid transparent;
-        border-top-color: #9356DC;
+        border-top-color: $primaire;
         animation: spin 2s linear infinite;
     }
     ::before {
@@ -61,7 +68,7 @@ main, section, footer {
         left: 10px;
         right: 10px;
         bottom: 10px;
-        border-top-color: #FF79DA;
+        border-top-color: $secondaire;
         animation: spin 3s linear infinite;
     }
     ::after {
@@ -73,7 +80,7 @@ main, section, footer {
         left: 25px;
         right: 25px;
         bottom: 25px;
-        border-top-color: #99E2D0;
+        border-top-color: $tertiaire;
         animation: spin 1.5s linear infinite;
     }
 }
@@ -137,14 +144,14 @@ main {
             color: grey;
         }
         button {
-            background: linear-gradient(#FF79DA, #9356DC);
+            background: linear-gradient($secondaire, $primaire);
             border: none;
             color: white;
             padding: 20px;
             border-radius: 40px;
             font-size: 1em;
             margin: 30px 0px;
-            box-shadow: 5px 5px 5px lightgrey;
+            box-shadow: 5px 5px 5px $couleur-shadow;
             cursor: pointer;
             a {
                 text-decoration: none;
@@ -152,7 +159,7 @@ main {
             }
         }
         :active {
-            box-shadow: 5px 5px 5px grey;
+            box-shadow: 5px 5px 5px darken($couleur-shadow, 20%);
         }
     }
 }
@@ -173,7 +180,7 @@ main {
             padding: 30px;
             position: relative;
             border-radius: 20px;
-            box-shadow: 5px 5px 5px lightgrey;
+            box-shadow: 5px 5px 5px $couleur-shadow;
             cursor: pointer;
             i {
                 width: 20%;
@@ -194,7 +201,7 @@ main {
                 height: 30px;
                 width: 30px;
                 border-radius: 30px;
-                background-color: #9356DC;
+                background-color: $primaire;
                 color: white;
             }
         }
@@ -226,7 +233,7 @@ main {
                 position: absolute;
                 top: 20px;
                 right: 20px;
-                background-color: #99E2D0;
+                background-color: $tertiaire;
                 padding: 10px;
                 border-radius: 5px;
             }
@@ -255,7 +262,7 @@ main {
                     background-clip: text;
                     -webkit-background-clip: text;
                     -moz-background-clip: text;
-                    background-image: linear-gradient(#9356DC, #FF79DA);
+                    background-image: linear-gradient($primaire, $secondaire);
                     color: transparent;
                     transition: all 0.5s ease-in-out;
                 }

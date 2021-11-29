@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Variables */
 /* Animation Keyframes */
 @keyframes spin {
   from {
@@ -44,7 +45,7 @@
 }
 /* Animation chargement de la page */
 header, img, section, footer {
-  animation: start 1s 3s both;
+  animation: start 1s 1s both;
 }
 
 .loader {
@@ -57,7 +58,7 @@ header, img, section, footer {
   z-index: 100;
   cursor: wait;
   position: fixed;
-  animation: end 1s 3s linear forwards;
+  animation: end 1s 1s linear forwards;
 }
 .loader .loader-object {
   display: block;
@@ -204,16 +205,16 @@ section .choix-menu {
   animation: apparition 2s ease-in-out forwards;
 }
 section .choix-menu:nth-child(2) {
-  animation-delay: 3.2s;
+  animation-delay: 1.2s;
 }
 section .choix-menu:nth-child(3) {
-  animation-delay: 3.4s;
+  animation-delay: 1.4s;
 }
 section .choix-menu:nth-child(4) {
-  animation-delay: 3.6s;
+  animation-delay: 1.6s;
 }
 section .choix-menu:nth-child(5) {
-  animation-delay: 3.6s;
+  animation-delay: 1.8s;
 }
 section .choix-menu .textes {
   padding: 20px;
@@ -286,7 +287,7 @@ section .bouton-commander button {
   cursor: pointer;
 }
 section .bouton-commander button:active {
-  box-shadow: 5px 5px 5px grey;
+  box-shadow: 5px 5px 5px #a0a0a0;
 }
 
 /* Footer */

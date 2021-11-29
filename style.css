@@ -1,3 +1,4 @@
+/* Variables */
 /* Animation Keyframes */
 @keyframes spin {
   from {
@@ -25,7 +26,7 @@
 }
 /* Animation chargement de la page */
 main, section, footer {
-  animation: start 1s 3s both;
+  animation: start 1s 1s both;
 }
 
 .loader {
@@ -38,7 +39,7 @@ main, section, footer {
   z-index: 100;
   cursor: wait;
   position: fixed;
-  animation: end 1s 3s linear forwards;
+  animation: end 1s 1s linear forwards;
 }
 .loader .loader-object {
   display: block;
@@ -151,7 +152,7 @@ main section button a {
   color: white;
 }
 main section :active {
-  box-shadow: 5px 5px 5px grey;
+  box-shadow: 5px 5px 5px #a0a0a0;
 }
 
 /* Section 1 : Fonctionnement */

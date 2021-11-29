@@ -1,3 +1,10 @@
+
+/* Variables */
+$primaire: #9356DC;
+$secondaire: #FF79DA;
+$tertiaire: #99E2D0;
+$couleur-shadow: lightgrey;
+
 /* Animation Keyframes */
 @keyframes spin {
     from {
@@ -48,7 +55,7 @@
 
 /* Animation chargement de la page */
 header, img, section, footer {
-    animation: start 1s 3s both;
+    animation: start 1s 1s both;
 }
 
 .loader {
@@ -61,7 +68,7 @@ header, img, section, footer {
     z-index: 100;
     cursor: wait;
     position: fixed;
-    animation: end 1s 3s linear forwards;
+    animation: end 1s 1s linear forwards;
     .loader-object {
         display: block;
         position: absolute;
@@ -69,7 +76,7 @@ header, img, section, footer {
         height: 250px;
         border-radius: 50%;
         border: 7px solid transparent;
-        border-top-color: #9356DC;
+        border-top-color: $primaire;
         animation: spin 2s linear infinite;
     }
     ::before {
@@ -81,7 +88,7 @@ header, img, section, footer {
         left: 10px;
         right: 10px;
         bottom: 10px;
-        border-top-color: #FF79DA;
+        border-top-color: $secondaire;
         animation: spin 3s linear infinite;
     }
     ::after {
@@ -93,7 +100,7 @@ header, img, section, footer {
         left: 25px;
         right: 25px;
         bottom: 25px;
-        border-top-color: #99E2D0;
+        border-top-color: $tertiaire;
         animation: spin 1.5s linear infinite;
     }
 }
@@ -171,7 +178,7 @@ section {
             background-clip: text;
             -webkit-background-clip: text;
             -moz-background-clip: text;
-            background-image: linear-gradient(#9356DC, #FF79DA);
+            background-image: linear-gradient($primaire, $secondaire);
             color: transparent;
             transition: all 0.5s ease-in-out;
         }
@@ -185,7 +192,7 @@ section {
         ::after {
             content: "";
             display: block;
-            background-color: #99E2D0;
+            background-color: $tertiaire;
             height: 5px;
             width: 70px;
             position: relative;
@@ -194,7 +201,7 @@ section {
     }
     .choix-menu {
         background-color: white;
-        box-shadow: 5px 5px 5px lightgrey;
+        box-shadow: 5px 5px 5px $couleur-shadow;
         margin-bottom: 20px;
         border-radius: 30px;
         overflow: hidden;
@@ -205,16 +212,16 @@ section {
         opacity: 0;
         animation: apparition 2s ease-in-out forwards;
         &:nth-child(2) {
-            animation-delay: 3.2s;
+            animation-delay: 1.2s;
         }
         &:nth-child(3) {
-            animation-delay: 3.4s;
+            animation-delay: 1.4s;
         }
         &:nth-child(4) {
-            animation-delay: 3.6s;
+            animation-delay: 1.6s;
         }
         &:nth-child(5) {
-            animation-delay: 3.6s;
+            animation-delay: 1.8s;
         }
         .textes {
             padding: 20px;
@@ -245,7 +252,7 @@ section {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #99E2D0;
+            background-color: $tertiaire;
             color: white;
             width: 0%;
             font-size: 1.5em;
@@ -277,17 +284,17 @@ section {
         display: flex;
         justify-content: center;
         button {
-            background: linear-gradient(#FF79DA, #9356DC);
+            background: linear-gradient($secondaire, $primaire);
             border: none;
             color: white;
             padding: 20px 60px;
             border-radius: 40px;
             font-size: 1em;
             margin: 50px 0px;
-            box-shadow: 5px 5px 5px lightgrey;
+            box-shadow: 5px 5px 5px $couleur-shadow;
             cursor: pointer;
             &:active {
-                box-shadow: 5px 5px 5px grey;
+                box-shadow: 5px 5px 5px darken($couleur-shadow, 20%);
             }
         }
     }
