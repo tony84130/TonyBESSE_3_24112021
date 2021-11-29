@@ -147,12 +147,9 @@ main section button {
   box-shadow: 5px 5px 5px lightgrey;
   cursor: pointer;
 }
-main section button a {
-  text-decoration: none;
-  color: white;
-}
-main section :active {
+main section button:hover {
   box-shadow: 5px 5px 5px #a0a0a0;
+  background: linear-gradient(#fface8, #ae80e5);
 }
 
 /* Section 1 : Fonctionnement */
@@ -197,6 +194,12 @@ main section :active {
   border-radius: 30px;
   background-color: #9356DC;
   color: white;
+}
+.fonctionnement .affichage .affichage-menu:hover {
+  background-color: #f2eafb;
+}
+.fonctionnement .affichage .affichage-menu:hover i {
+  color: #9356DC;
 }
 
 /* Section 2 : Restaurants */
@@ -245,24 +248,26 @@ main section :active {
   font-size: 2em;
 }
 .restaurant .disposition .restaurant-disposition .disposition-dessous-image .far {
-  position: absolute;
-  right: 50px;
-  z-index: 1;
+  position: relative;
   transition: all 1s ease-in-out;
 }
 .restaurant .disposition .restaurant-disposition .disposition-dessous-image .fas {
   transform: scale(0);
   position: absolute;
-  right: 50px;
+  right: 20px;
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-image: linear-gradient(#9356DC, #FF79DA);
   color: transparent;
   transition: all 0.5s ease-in-out;
+  z-index: 1;
 }
 .restaurant .disposition .restaurant-disposition .disposition-dessous-image:hover .fas {
   transform: scale(1);
+}
+.restaurant .disposition .restaurant-disposition .disposition-dessous-image:hover .far {
+  transform: scale(0);
 }
 
 /* Footer */
@@ -291,8 +296,19 @@ footer div a {
 }
 
 /* Media Queries : Version tablette */
+@media screen and (min-width: 768px) {
+  /* Logo */
+  main header img {
+    width: 40%;
+  }
+}
 /* Media Queries : Version Desktop */
 @media screen and (min-width: 992px) {
+  /* Logo */
+  main header img {
+    width: 30%;
+  }
+
   /* Fonctionnement */
   .fonctionnement .affichage {
     display: flex;

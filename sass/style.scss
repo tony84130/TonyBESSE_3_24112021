@@ -153,13 +153,10 @@ main {
             margin: 30px 0px;
             box-shadow: 5px 5px 5px $couleur-shadow;
             cursor: pointer;
-            a {
-                text-decoration: none;
-                color: white;
+            &:hover {
+                box-shadow: 5px 5px 5px darken($couleur-shadow, 20%);
+                background: linear-gradient(lighten($secondaire, 10%), lighten($primaire, 10%));
             }
-        }
-        :active {
-            box-shadow: 5px 5px 5px darken($couleur-shadow, 20%);
         }
     }
 }
@@ -203,6 +200,12 @@ main {
                 border-radius: 30px;
                 background-color: $primaire;
                 color: white;
+            }
+            &:hover {
+                background-color: lighten($primaire, 35%);
+            }
+            &:hover i {
+                color: $primaire;
             }
         }
     }
@@ -250,24 +253,26 @@ main {
                     font-size: 2em;
                 }
                 .far {
-                    position: absolute;
-                    right: 50px;
-                    z-index: 1;
+                    position: relative;
                     transition: all 1s ease-in-out;
                 }
                 .fas {
                     transform: scale(0);
                     position: absolute;
-                    right: 50px;
+                    right: 20px;
                     background-clip: text;
                     -webkit-background-clip: text;
                     -moz-background-clip: text;
                     background-image: linear-gradient($primaire, $secondaire);
                     color: transparent;
                     transition: all 0.5s ease-in-out;
+                    z-index: 1;
                 }
                 &:hover .fas {
                     transform: scale(1);
+                }
+                &:hover .far {
+                    transform: scale(0);
                 }
             }
         }
@@ -303,10 +308,27 @@ footer {
 
 /* Media Queries : Version tablette */
 @media screen and (min-width: 768px) {   
+    /* Logo */
+    main {
+        header {
+            img {
+                width: 40%;
+            }
+        }
+    }
 }
+
 
 /* Media Queries : Version Desktop */
 @media screen and (min-width: 992px) {
+    /* Logo */
+    main {
+        header {
+            img {
+                width: 30%;
+            }
+        }
+    }
     /* Fonctionnement */
     .fonctionnement {
         .affichage {
