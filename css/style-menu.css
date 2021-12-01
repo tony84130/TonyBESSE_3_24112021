@@ -165,9 +165,10 @@ section .choix-menu .textes p {
 }
 section .choix-menu > p {
   display: flex;
+  justify-content: flex-end;
   align-items: flex-end;
   padding: 20px;
-  width: 10%;
+  width: 20%;
 }
 section .choix-menu .check {
   display: flex;
@@ -273,7 +274,7 @@ footer ul a {
     flex-wrap: wrap;
   }
   .affichage-desktop > div {
-    width: 30%;
+    width: 32%;
   }
   .affichage-desktop .choix-menu {
     margin: 10px;

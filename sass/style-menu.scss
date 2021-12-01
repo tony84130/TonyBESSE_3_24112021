@@ -169,9 +169,10 @@ section {
         }
         > p {
             display: flex;
+            justify-content: flex-end;
             align-items: flex-end;
             padding: 20px;
-            width: 10%;
+            width: 20%;
         }
         .check {
             display: flex;
@@ -282,7 +283,7 @@ footer {
         justify-content: space-around;
         flex-wrap: wrap;
         > div {
-            width: 30%;
+            width: 32%;
         }
         .choix-menu {
             margin: 10px;
