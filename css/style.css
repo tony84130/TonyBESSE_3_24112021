@@ -25,7 +25,7 @@
   }
 }
 /* Animation chargement de la page */
-main, section, footer {
+main, nav, section, footer {
   animation: start 1s 1s both;
 }
 
@@ -281,16 +281,18 @@ footer h4 {
   margin-bottom: 10px;
   letter-spacing: 0.03em;
 }
-footer div p {
+footer ul {
+  list-style-type: none;
+}
+footer ul li {
   line-height: 1.6em;
 }
-footer div p i {
+footer ul li i {
   width: 30px;
   text-align: center;
   margin-right: 5px;
 }
-footer div a {
-  list-style-type: none;
+footer ul a {
   text-decoration: none;
   color: white;
 }
@@ -335,6 +337,20 @@ footer div a {
   }
   .restaurant .disposition .restaurant-disposition {
     width: 40%;
+  }
+
+  /* Footer */
+  footer {
+    padding-bottom: 60px;
+  }
+  footer h4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-around;
   }
 }
 

@@ -188,7 +188,7 @@ section {
             i {
                 transition: all 1s ease-out;
                 cursor: pointer;
-                :active {
+                &:active {
                     transform: rotate(-720deg);
                 }
             }
@@ -236,19 +236,19 @@ footer {
         margin-bottom: 10px;
         letter-spacing: 0.03em;
     }
-    div {
-        p {
+    ul {
+        list-style-type: none;
+        li {
             line-height: 1.6em;
             i {
                 width: 30px;
                 text-align: center;
                 margin-right: 5px;
             }
-            a {
-                list-style-type: none;
-                text-decoration: none;
-                color: white;
-            }
+        }
+        a {
+            text-decoration: none;
+            color: white;
         }
     }
 }
@@ -276,7 +276,6 @@ footer {
         height: 400px;
         object-fit: cover;
     }
-
     /* Menu */
     .affichage-desktop {
         display: flex;
@@ -288,10 +287,8 @@ footer {
         .choix-menu {
             margin: 10px;
         }
-    }
-
+    } 
     /* Footer */
-
     footer {
         padding-bottom: 60px;
         h4 {
@@ -299,7 +296,7 @@ footer {
             justify-content: center;
             margin-bottom: 20px;
         }
-        div {
+        ul {
             display: flex;
             justify-content: space-around;
         }

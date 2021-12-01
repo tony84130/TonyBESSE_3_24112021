@@ -34,7 +34,7 @@ $couleur-shadow: lightgrey;
 }
 
 /* Animation chargement de la page */
-main, section, footer {
+main, nav, section, footer {
     animation: start 1s 1s both;
 }
 
@@ -289,8 +289,9 @@ footer {
         margin-bottom: 10px;
         letter-spacing: 0.03em;
     }
-    div {
-        p {
+    ul {
+        list-style-type: none;
+        li {
             line-height: 1.6em;
             i {
                 width: 30px;
@@ -299,7 +300,6 @@ footer {
             }
         }
         a {
-            list-style-type: none;
             text-decoration: none;
             color: white;
         }
@@ -359,5 +359,18 @@ footer {
             }
         }
     }   
+    /* Footer */
+    footer {
+        padding-bottom: 60px;
+        h4 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        ul {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
 }
 
