@@ -28,13 +28,12 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
   background-color: #F6F6F6;
 }
 
-.logo, h1 {
+.logo, h2 {
   font-family: "Shrikhand", cursive;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
 }
 
 /* Header */
@@ -44,9 +43,6 @@ header {
   align-items: center;
   padding: 20px;
   position: relative;
-}
-header img {
-  width: 50%;
 }
 header a {
   text-decoration: none;
@@ -78,8 +74,11 @@ section {
 section .titre {
   display: flex;
   justify-content: space-between;
-  padding: 0px 30px 30px 10px;
+  padding: 0px 30px 0px 10px;
   /* Coeur */
+}
+section .titre h2 {
+  font-size: 30px;
 }
 section .titre i {
   font-size: 2em;
@@ -107,10 +106,10 @@ section .titre:hover .fas {
 section .titre:hover .far {
   transform: scale(0);
 }
-section h2 {
-  margin: 60px 0px 30px 0px;
+section h3 {
+  margin: 30px 0px 30px 0px;
 }
-section h2 ::after {
+section h3::after {
   content: "";
   display: block;
   background-color: #99E2D0;
@@ -151,7 +150,7 @@ section .choix-menu .textes {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-section .choix-menu .textes h3 {
+section .choix-menu .textes h4 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -226,7 +225,7 @@ footer {
   color: white;
   padding: 30px;
 }
-footer h4 {
+footer h5 {
   font-size: 1.3em;
   margin-bottom: 10px;
   letter-spacing: 0.03em;
@@ -248,19 +247,15 @@ footer ul a {
 }
 
 /* Media Queries : Version tablette */
-@media screen and (min-width: 768px) {
-  /* Logo */
-  header img {
-    width: 40%;
+@media screen and (max-width: 992px) {
+  /* Fond d'écran (Background) */
+  #background {
+    height: 400px;
+    object-fit: cover;
   }
 }
 /* Media Queries : Version Desktop */
 @media screen and (min-width: 992px) {
-  /* Logo */
-  header img {
-    width: 30%;
-  }
-
   /* Background Image */
   #background {
     height: 400px;
@@ -272,6 +267,8 @@ footer ul a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
   }
   .affichage-desktop > div {
     width: 32%;
@@ -284,7 +281,7 @@ footer ul a {
   footer {
     padding-bottom: 60px;
   }
-  footer h4 {
+  footer h5 {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;

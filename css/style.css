@@ -25,7 +25,7 @@
   }
 }
 /* Animation chargement de la page */
-main, nav, section, footer {
+header, div, nav, main, section, footer {
   animation: start 1s 1s both;
 }
 
@@ -85,47 +85,43 @@ main, nav, section, footer {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
 }
 
 .logo {
   font-family: "Shrikhand", cursive;
+  letter-spacing: 0.02em;
 }
 
-/* Main */
-main {
-  /* Header */
-  /* Form : Position et recherche */
-  /* Main Section */
-}
-main header {
+/* Header */
+header {
   display: flex;
   justify-content: center;
   padding: 20px;
 }
-main header img {
-  width: 50%;
-}
-main .formulaire {
+
+/* Form : Position et recherche */
+.formulaire {
   background-color: #EAEAEA;
   padding: 20px 0px;
 }
-main .formulaire form {
+.formulaire form {
   display: flex;
   justify-content: center;
 }
-main .formulaire form input {
+.formulaire form input {
   border: none;
   background-color: #EAEAEA;
   font-size: 1em;
   width: 35%;
 }
-main .formulaire i {
+.formulaire i {
   width: 10%;
   text-align: right;
   margin-right: 20px;
 }
-main section {
+
+/* Main */
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -133,10 +129,10 @@ main section {
   background-color: #F6F6F6;
   padding: 40px;
 }
-main section p {
+main p {
   color: grey;
 }
-main section button {
+main button {
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   color: white;
@@ -147,7 +143,7 @@ main section button {
   box-shadow: 5px 5px 5px lightgrey;
   cursor: pointer;
 }
-main section button:hover {
+main button:hover {
   box-shadow: 5px 5px 5px #a0a0a0;
   background: linear-gradient(#fface8, #ae80e5);
 }
@@ -276,7 +272,7 @@ footer {
   color: white;
   padding: 30px;
 }
-footer h4 {
+footer h5 {
   font-size: 1.3em;
   margin-bottom: 10px;
   letter-spacing: 0.03em;
@@ -298,44 +294,41 @@ footer ul a {
 }
 
 /* Media Queries : Version tablette */
-@media screen and (min-width: 768px) {
-  /* Logo */
-  main header img {
-    width: 40%;
-  }
-}
 /* Media Queries : Version Desktop */
 @media screen and (min-width: 992px) {
-  /* Logo */
-  main header img {
-    width: 30%;
-  }
-
   /* Fonctionnement */
-  .fonctionnement .affichage {
+  .fonctionnement .fonctionnement-conteneur {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .fonctionnement .fonctionnement-conteneur .affichage {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 20px;
   }
-  .fonctionnement .affichage .affichage-menu {
+  .fonctionnement .fonctionnement-conteneur .affichage .affichage-menu {
     margin: 10px;
   }
-  .fonctionnement .affichage .affichage-menu i {
+  .fonctionnement .fonctionnement-conteneur .affichage .affichage-menu i {
     width: 30%;
   }
-  .fonctionnement .affichage .affichage-menu .affichage-numero {
+  .fonctionnement .fonctionnement-conteneur .affichage .affichage-menu .affichage-numero {
     left: 45%;
     bottom: -15px;
   }
 
   /* Restaurant */
-  .restaurant .disposition {
+  .restaurant .restaurant-conteneur {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .restaurant .restaurant-conteneur .disposition {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .restaurant .disposition .restaurant-disposition {
+  .restaurant .restaurant-conteneur .disposition .restaurant-disposition {
     width: 40%;
   }
 
@@ -343,7 +336,7 @@ footer ul a {
   footer {
     padding-bottom: 60px;
   }
-  footer h4 {
+  footer h5 {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
